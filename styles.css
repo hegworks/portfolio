@@ -8,40 +8,156 @@ html {
 	box-sizing: inherit;
 }
 
+:root {
+	--midnight-blue: #2c3e50;
+	--wet-asphalt: #34495e;
+	--wet-asphalt-darker: #092234;
+	--wet-asphalt-lighter: #60748b;
+	--font-color: #ecf0f1;
+	--grey: #7f8c8d;
+}
+
 body {
-	font-family: sans-serif;
+	font-family: Helvetica, sans-serif;
 	margin: 0;
+	background-color: var(--midnight-blue);
+	color: var(--font-color);
 }
 
 header {
 	text-align: center;
-	color: white;
 	text-shadow: 2px 2px 4px black;
-	font-family: "Courier New", Courier, monospace;
 
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	background-color: rgb(
-		184,
-		255,
-		184
-	); /* For browsers that do not support gradients */
-	background-image: linear-gradient(
-		to bottom right,
-		#95a5a6,
-		#2c3e50
+	background: rgb(52, 73, 94);
+	background: radial-gradient(
+		circle,
+		rgba(52, 73, 94, 1) 0%,
+		rgba(38, 50, 56, 1) 100%
 	);
-
-	border-bottom: 10px solid black;
 }
 
 .title,
 .subtitle {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-weight: lighter;
 }
 
 .title {
-	font-size: 3.7em;
+	font-size: 8em;
+}
+
+.subtitle {
+	font-size: 3.8em;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	background-color: var(--midnight-blue);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-top: 1px solid var(--font-color);
+	border-bottom: 1px solid var(--font-color);
+}
+
+nav ul li {
+	text-align: center;
+	flex: 25%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-right: 1px solid var(--font-color);
+}
+
+nav ul li:last-child {
+	border-right: none;
+}
+
+nav ul li a {
+	color: var(--font-color);
+	text-decoration: none;
+	font-size: 2em;
+}
+
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+}
+
+.article-title {
+	padding-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.skill-flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-title {
+	text-align: center;
+	flex: 15%;
+	font-size: 100%;
+}
+
+.skill-container {
+	flex: 80%;
+	background-color: var(--wet-asphalt-lighter);
+	margin-right: 5%;
+	height: 20px;
+}
+
+.skills {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.unity {
+	width: 100%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.csharp {
+	width: 50%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+@media (max-width: 700px) {
+	.title {
+		font-size: 18vw;
+	}
+
+	.subtitle {
+		font-size: 8.5vw;
+	}
+
+	nav ul li {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	nav ul li a {
+		color: var(--font-color);
+		text-decoration: none;
+		font-size: 100%;
+	}
+
+	.skill-title {
+		font-size: 80%;
+	}
 }
