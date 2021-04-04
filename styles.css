@@ -1,6 +1,8 @@
 /* use box-sizing */
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
 }
 *,
 *:before,
@@ -14,7 +16,6 @@ html {
 	--wet-asphalt-darker: #092234;
 	--wet-asphalt-lighter: #60748b;
 	--font-color: #ecf0f1;
-	--grey: #7f8c8d;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
 	color: var(--font-color);
 }
 
+/* -----------HEADER----------- */
 header {
 	text-align: center;
 	text-shadow: 2px 2px 4px black;
@@ -53,13 +55,20 @@ header {
 .subtitle {
 	font-size: 3.8em;
 }
+/* -----------ENDOF HEADER----------- */
+
+/* -----------NAV BAR----------- */
+nav {
+	position: sticky;
+	top: 0;
+}
 
 nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	list-style-type: none;
-	background-color: var(--midnight-blue);
+	background-color: var(--wet-asphalt-darker);
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -70,8 +79,6 @@ nav ul {
 nav ul li {
 	text-align: center;
 	flex: 25%;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	border-right: 1px solid var(--font-color);
 }
 
@@ -80,28 +87,51 @@ nav ul li:last-child {
 }
 
 nav ul li a {
+	display: block;
 	color: var(--font-color);
 	text-decoration: none;
 	font-size: 2em;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+nav ul li a:hover,
+.active {
+	background-color: var(--wet-asphalt-lighter);
+	color: var(--wet-asphalt-darker);
+}
+
+/* -----------ENDOF NAV BAR----------- */
+
+/* -----------ARTICLE----------- */
+.articles-flex-container {
+	display: flex;
+}
+
+.about-me-article {
+	flex: 25%;
+}
+
+.skills-article {
+	flex: 75%;
 }
 
 p {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0;
+	font-size: 18px;
 }
 
 .article-title {
 	padding-left: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-size: 24px;
 }
+/* -----------ENDOF ARTICLE----------- */
 
-hr {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
+/* -----------SKILLS----------- */
 .skill-flex-container {
 	display: flex;
 	flex-direction: row;
@@ -112,7 +142,6 @@ hr {
 .skill-title {
 	text-align: center;
 	flex: 0 0 15%;
-	font-size: 2.5vw;
 }
 
 .skill-container {
@@ -120,11 +149,14 @@ hr {
 	margin-right: 5%;
 	background-color: var(--wet-asphalt-lighter);
 	height: 20px;
+	border-radius: 25px;
+	transition-duration: 1s;
 }
 
 .skills {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	border-radius: 25px;
 }
 
 .unity {
@@ -133,8 +165,115 @@ hr {
 }
 
 .csharp {
-	width: 50%;
+	width: 95%;
 	background-color: var(--wet-asphalt-darker);
+}
+
+.gameplay {
+	width: 90%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.git {
+	width: 80%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.html {
+	width: 90%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.css {
+	width: 90%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.js {
+	width: 80%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.java {
+	width: 90%;
+	background-color: var(--wet-asphalt-darker);
+}
+
+.cpp {
+	width: 80%;
+	background-color: var(--wet-asphalt-darker);
+}
+/* -----------ENDOF SKILLS----------- */
+
+.vertical-divider {
+	border-width: 0;
+	border-right: 1px dashed var(--font-color);
+	margin-right: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.horizontal-divider {
+	width: 100%;
+	border-width: 0;
+	border-top: 1px solid var(--font-color);
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* -----------PROJECTS----------- */
+.projects {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.project-container {
+	flex: 30%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: var(--wet-asphalt);
+	box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.75);
+	transition-duration: 0.3s;
+}
+
+.project-container:hover {
+	border: 1px solid var(--wet-asphalt-darker);
+	box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.75);
+}
+/* -----------ENDOF PROJECTS----------- */
+
+/* -----------CONTACT----------- */
+.contact {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.icon {
+	font-size: 24px;
+	padding: 20px;
+	margin: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	text-decoration: none;
+	color: var(--font-color);
+	background-color: var(--wet-asphalt-darker);
+	transition-duration: 0.5s;
+}
+
+.icon:hover {
+	font-size: 36px;
+	border-radius: 25%;
+	color: var(--wet-asphalt-darker);
+	background-color: var(--wet-asphalt-lighter);
+}
+/* -----------ENDOF CONTACT----------- */
+
+.add-top-margin {
+	margin-top: 10px;
 }
 
 @media (max-width: 700px) {
@@ -146,16 +285,34 @@ hr {
 		font-size: 8.5vw;
 	}
 
-	nav ul li {
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-
 	nav ul li a {
 		color: var(--font-color);
 		text-decoration: none;
 		font-size: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
+	.skill-title {
+		font-size: 2.5vw;
+	}
 
+	.articles-flex-container {
+		flex-direction: column;
+	}
+
+	.vertical-divider {
+		width: 100%;
+		border-top: 1px solid var(--font-color);
+		margin-top: 10px;
+	}
+
+	.projects {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.project-container {
+		margin-bottom: 10px;
+	}
 }

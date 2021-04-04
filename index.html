@@ -10,6 +10,10 @@
 		/>
 		<meta name="description" content="Portfolio of Hessam Ghadimi" />
 		<link rel="stylesheet" href="styles.css" />
+		<script
+			src="https://kit.fontawesome.com/5c3f6541fe.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 
 	<body>
@@ -18,74 +22,155 @@
 			<h2 class="subtitle">Indie Game Developer</h2>
 		</header>
 
+		<script src="javascript.js"></script>
+
 		<nav>
 			<ul>
-				<li><a class="active" href="#about">about me</a></li>
+				<li><a href="#about">about me</a></li>
 				<li><a href="#skills">skills</a></li>
 				<li><a href="#projects">projects</a></li>
 				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
 
-		<article>
-			<h3 class="article-title" id="about">About me</h3>
-			<p>
-				<b>HEGworks</b> is the developer name of me,
-				<em>Hessam Ghadimi</em>. I am a Software Engineer student,
-				interested in game developing, trying to reach my goal and find
-				my role in this industry.
-			</p>
+		<div class="articles-flex-container">
+			<article class="about-me-article">
+				<h3 class="article-title" id="about">About me</h3>
+				<p>
+					<b>HEGworks</b> is the developer name of me,
+					<em>Hessam Ghadimi</em>. I am a Software Engineer student,
+					interested in game developing, trying to reach my goal and
+					find my role in this industry.
+				</p>
+			</article>
+
+			<hr class="vertical-divider" />
+
+			<article class="skills-article">
+				<h3 class="article-title" id="skills">Skills</h3>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">Unity Engine</h4>
+					<div class="skill-container">
+						<div class="skills unity"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">C#</h4>
+					<div class="skill-container">
+						<div class="skills csharp"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">Gameplay Making</h4>
+					<div class="skill-container">
+						<div class="skills gameplay"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">Git</h4>
+					<div class="skill-container">
+						<div class="skills git"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">HTML</h4>
+					<div class="skill-container">
+						<div class="skills html"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">CSS</h4>
+					<div class="skill-container">
+						<div class="skills css"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">JavaScript</h4>
+					<div class="skill-container">
+						<div class="skills js"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">Java</h4>
+					<div class="skill-container">
+						<div class="skills java"></div>
+					</div>
+				</div>
+
+				<div class="skill-flex-container">
+					<h4 class="skill-title">C++</h4>
+					<div class="skill-container">
+						<div class="skills cpp"></div>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<hr class="horizontal-divider" />
+
+		<article class="projects" id="projects">
+			<div class="project-container">
+				<h4>Project1</h4>
+				<p>
+					HEGworks is the developer name of me, Hessam Ghadimi. I am a
+					Software Engineer student, interested in game developing,
+					trying to reach my goal and find my role in this industry.
+				</p>
+			</div>
+			<div class="project-container">
+				<h4>Project2</h4>
+				<p>
+					HEGworks is the developer name of me, Hessam Ghadimi. I am a
+					Software Engineer student, interested in game developing,
+					trying to reach my goal and find my role in this industry.
+				</p>
+			</div>
+			<div class="project-container">
+				<h4>Project3</h4>
+				<p>
+					HEGworks is the developer name of me, Hessam Ghadimi. I am a
+					Software Engineer student, interested in game developing,
+					trying to reach my goal and find my role in this industry.
+				</p>
+			</div>
 		</article>
 
-		<hr />
+		<hr class="horizontal-divider" />
 
-		<article>
-			<h3 class="article-title" id="skills">Skills</h3>
-
-			<div class="skill-flex-container">
-				<h4 class="skill-title">Unity Engine</h4>
-				<div class="skill-container">
-					<div class="skills unity"></div>
-				</div>
+		<article class="contact" id="contact">
+			<div class="contact-container">
+				<a
+					href="mailto:hess.gha@gmail.com"
+					class="far fa-envelope-open icon"
+				></a>
 			</div>
-
-			<div class="skill-flex-container">
-				<h4 class="skill-title">C#</h4>
-				<div class="skill-container">
-					<div class="skills csharp"></div>
-				</div>
+			<div class="contact-container">
+				<a
+					href="https://t.me/HEGworks"
+					target="blank"
+					class="fab fa-telegram-plane icon"
+				></a>
 			</div>
-
-			<div class="skill-flex-container">
-				<h4 class="skill-title">Gameplay Making</h4>
-				<div class="skill-container">
-					<div class="skills unity"></div>
-				</div>
+			<div class="contact-container">
+				<a
+					href="https://www.youtube.com/channel/UCE6L02uCJOPAqRjIIEK1UbQ"
+					class="fab fa-youtube icon"
+				></a>
 			</div>
-
-			<div class="skill-flex-container">
-				<h4 class="skill-title">Git</h4>
-				<div class="skill-container">
-					<div class="skills unity"></div>
-				</div>
+			<div class="contact-container">
+				<a
+					href="https://twitter.com/HEGworks"
+					class="fab fa-twitter icon"
+				></a>
 			</div>
-
-			<!-- <h4 class="skill-title">HTML</h4>
-			<div class="skill-container">
-				<div class="skills unity"></div>
-			</div>
-
-			<h4 class="skill-title">CSS</h4>
-			<div class="skill-container">
-				<div class="skills unity"></div>
-			</div>
-
-			<h4 class="skill-title">JavaScript</h4>
-			<div class="skill-container">
-				<div class="skills unity"></div>
-			</div> -->
 		</article>
-
-		<hr />
 	</body>
 </html>
