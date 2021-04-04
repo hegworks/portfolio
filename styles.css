@@ -111,14 +111,14 @@ hr {
 
 .skill-title {
 	text-align: center;
-	flex: 15%;
-	font-size: 100%;
+	flex: 0 0 15%;
+	font-size: 2.5vw;
 }
 
 .skill-container {
-	flex: 80%;
-	background-color: var(--wet-asphalt-lighter);
+	flex: 0 0 80%;
 	margin-right: 5%;
+	background-color: var(--wet-asphalt-lighter);
 	height: 20px;
 }
 
@@ -157,7 +157,5 @@ hr {
 		font-size: 100%;
 	}
 
-	.skill-title {
-		font-size: 80%;
-	}
+
 }
