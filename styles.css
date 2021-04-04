@@ -124,8 +124,8 @@ p {
 }
 
 .article-title {
-	padding-left: 5px;
-	margin-top: 10px;
+	text-align: center;
+	margin-top: 20px;
 	margin-bottom: 10px;
 	font-size: 24px;
 }
@@ -225,21 +225,20 @@ p {
 .projects {
 	display: flex;
 	margin-bottom: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .project-container {
-	flex: 30%;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
+	margin: 10px;
 	text-align: center;
-	padding-bottom: 20px;
 	background-color: var(--wet-asphalt);
-	box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.75);
-	transition-duration: 1s;
+	box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.75);
+	transition-duration: 0.5s;
 }
 
 .project-container:hover {
-	box-shadow: inset 0px 0px 4px 3px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 0px 3px var(--font-color);
 }
 /* -----------ENDOF PROJECTS----------- */
 
@@ -308,14 +307,5 @@ p {
 		width: 100%;
 		border-top: 1px solid var(--font-color);
 		margin-top: 10px;
-	}
-
-	.projects {
-		flex-direction: column;
-		margin-bottom: 0;
-	}
-
-	.project-container {
-		margin-bottom: 10px;
 	}
 }
