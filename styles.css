@@ -23,6 +23,7 @@ body {
 	margin: 0;
 	background-color: var(--midnight-blue);
 	color: var(--font-color);
+	line-height: 23px;
 }
 
 /* -----------HEADER----------- */
@@ -45,15 +46,16 @@ header {
 .subtitle {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-weight: lighter;
+	line-height: 90px;
 }
 
 .title {
-	font-size: 8em;
+	font-size: 5.5em;
 }
 
 .subtitle {
-	font-size: 3.8em;
+	font-size: 4.4em;
+	font-weight: 100;
 }
 /* -----------ENDOF HEADER----------- */
 
